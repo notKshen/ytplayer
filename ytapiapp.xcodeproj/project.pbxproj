@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B31432E2C3B9A260019CF63 /* ytapiappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31432D2C3B9A260019CF63 /* ytapiappApp.swift */; };
-		8B3143302C3B9A260019CF63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31432F2C3B9A260019CF63 /* ContentView.swift */; };
+		8B31432E2C3B9A260019CF63 /* YoutTubeAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31432D2C3B9A260019CF63 /* YoutTubeAPIApp.swift */; };
+		8B3143302C3B9A260019CF63 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31432F2C3B9A260019CF63 /* HomeView.swift */; };
 		8B3143322C3B9A280019CF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3143312C3B9A280019CF63 /* Assets.xcassets */; };
 		8B3143352C3B9A280019CF63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3143342C3B9A280019CF63 /* Preview Assets.xcassets */; };
+		8B31433F2C3B9AA50019CF63 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31433E2C3B9AA50019CF63 /* DataService.swift */; };
+		8B3143412C3B9AF20019CF63 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3143402C3B9AF20019CF63 /* FeedView.swift */; };
+		8B3143432C3B9AFC0019CF63 /* VideoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3143422C3B9AFC0019CF63 /* VideoRowView.swift */; };
+		8B3143452C3B9B110019CF63 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3143442C3B9B110019CF63 /* VideoDetailView.swift */; };
+		8B3143472C3B9BA30019CF63 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3143462C3B9BA30019CF63 /* Video.swift */; };
+		8B3143492C3B9BB00019CF63 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3143482C3B9BB00019CF63 /* Playlist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B31432A2C3B9A260019CF63 /* ytapiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ytapiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B31432D2C3B9A260019CF63 /* ytapiappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ytapiappApp.swift; sourceTree = "<group>"; };
-		8B31432F2C3B9A260019CF63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B31432D2C3B9A260019CF63 /* YoutTubeAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutTubeAPIApp.swift; sourceTree = "<group>"; };
+		8B31432F2C3B9A260019CF63 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8B3143312C3B9A280019CF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3143342C3B9A280019CF63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B31433E2C3B9AA50019CF63 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		8B3143402C3B9AF20019CF63 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		8B3143422C3B9AFC0019CF63 /* VideoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRowView.swift; sourceTree = "<group>"; };
+		8B3143442C3B9B110019CF63 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
+		8B3143462C3B9BA30019CF63 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		8B3143482C3B9BB00019CF63 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		8B31432C2C3B9A260019CF63 /* ytapiapp */ = {
 			isa = PBXGroup;
 			children = (
-				8B31432D2C3B9A260019CF63 /* ytapiappApp.swift */,
-				8B31432F2C3B9A260019CF63 /* ContentView.swift */,
+				8B31432D2C3B9A260019CF63 /* YoutTubeAPIApp.swift */,
+				8B31433B2C3B9A6E0019CF63 /* Services */,
+				8B31433C2C3B9A760019CF63 /* Views */,
+				8B31433D2C3B9A7D0019CF63 /* Models */,
 				8B3143312C3B9A280019CF63 /* Assets.xcassets */,
 				8B3143332C3B9A280019CF63 /* Preview Content */,
 			);
@@ -65,6 +79,34 @@
 				8B3143342C3B9A280019CF63 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B31433B2C3B9A6E0019CF63 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B31433E2C3B9AA50019CF63 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8B31433C2C3B9A760019CF63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B31432F2C3B9A260019CF63 /* HomeView.swift */,
+				8B3143402C3B9AF20019CF63 /* FeedView.swift */,
+				8B3143422C3B9AFC0019CF63 /* VideoRowView.swift */,
+				8B3143442C3B9B110019CF63 /* VideoDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B31433D2C3B9A7D0019CF63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B3143462C3B9BA30019CF63 /* Video.swift */,
+				8B3143482C3B9BB00019CF63 /* Playlist.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B3143302C3B9A260019CF63 /* ContentView.swift in Sources */,
-				8B31432E2C3B9A260019CF63 /* ytapiappApp.swift in Sources */,
+				8B3143412C3B9AF20019CF63 /* FeedView.swift in Sources */,
+				8B3143452C3B9B110019CF63 /* VideoDetailView.swift in Sources */,
+				8B3143432C3B9AFC0019CF63 /* VideoRowView.swift in Sources */,
+				8B3143492C3B9BB00019CF63 /* Playlist.swift in Sources */,
+				8B31433F2C3B9AA50019CF63 /* DataService.swift in Sources */,
+				8B3143302C3B9A260019CF63 /* HomeView.swift in Sources */,
+				8B3143472C3B9BA30019CF63 /* Video.swift in Sources */,
+				8B31432E2C3B9A260019CF63 /* YoutTubeAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
