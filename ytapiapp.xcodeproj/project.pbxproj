@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B31432E2C3B9A260019CF63 /* YoutTubeAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31432D2C3B9A260019CF63 /* YoutTubeAPIApp.swift */; };
-		8B3143302C3B9A260019CF63 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31432F2C3B9A260019CF63 /* HomeView.swift */; };
 		8B3143322C3B9A280019CF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3143312C3B9A280019CF63 /* Assets.xcassets */; };
 		8B3143352C3B9A280019CF63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3143342C3B9A280019CF63 /* Preview Assets.xcassets */; };
 		8B31433F2C3B9AA50019CF63 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31433E2C3B9AA50019CF63 /* DataService.swift */; };
@@ -17,12 +16,13 @@
 		8B3143452C3B9B110019CF63 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3143442C3B9B110019CF63 /* VideoDetailView.swift */; };
 		8B3143472C3B9BA30019CF63 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3143462C3B9BA30019CF63 /* Video.swift */; };
 		8B3143492C3B9BB00019CF63 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3143482C3B9BB00019CF63 /* Playlist.swift */; };
+		8B31434D2C4F87260019CF63 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31434C2C4F87260019CF63 /* HomeView.swift */; };
+		8B5CBF752C7DB25C0062F7E0 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8B5CBF742C7DB25C0062F7E0 /* YouTubePlayerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B31432A2C3B9A260019CF63 /* ytapiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ytapiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B31432D2C3B9A260019CF63 /* YoutTubeAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutTubeAPIApp.swift; sourceTree = "<group>"; };
-		8B31432F2C3B9A260019CF63 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8B3143312C3B9A280019CF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3143342C3B9A280019CF63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B31433E2C3B9AA50019CF63 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -31,6 +31,9 @@
 		8B3143442C3B9B110019CF63 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 		8B3143462C3B9BA30019CF63 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		8B3143482C3B9BB00019CF63 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		8B31434A2C4F850E0019CF63 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		8B31434B2C4F85D70019CF63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8B31434C2C4F87260019CF63 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5CBF752C7DB25C0062F7E0 /* YouTubePlayerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +67,14 @@
 		8B31432C2C3B9A260019CF63 /* ytapiapp */ = {
 			isa = PBXGroup;
 			children = (
+				8B31434B2C4F85D70019CF63 /* Info.plist */,
 				8B31432D2C3B9A260019CF63 /* YoutTubeAPIApp.swift */,
 				8B31433B2C3B9A6E0019CF63 /* Services */,
 				8B31433C2C3B9A760019CF63 /* Views */,
 				8B31433D2C3B9A7D0019CF63 /* Models */,
 				8B3143312C3B9A280019CF63 /* Assets.xcassets */,
 				8B3143332C3B9A280019CF63 /* Preview Content */,
+				8B31434A2C4F850E0019CF63 /* Config.xcconfig */,
 			);
 			path = ytapiapp;
 			sourceTree = "<group>";
@@ -92,7 +98,7 @@
 		8B31433C2C3B9A760019CF63 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8B31432F2C3B9A260019CF63 /* HomeView.swift */,
+				8B31434C2C4F87260019CF63 /* HomeView.swift */,
 				8B3143402C3B9AF20019CF63 /* FeedView.swift */,
 				8B3143422C3B9AFC0019CF63 /* VideoRowView.swift */,
 				8B3143442C3B9B110019CF63 /* VideoDetailView.swift */,
@@ -125,6 +131,9 @@
 			dependencies = (
 			);
 			name = ytapiapp;
+			packageProductDependencies = (
+				8B5CBF742C7DB25C0062F7E0 /* YouTubePlayerKit */,
+			);
 			productName = ytapiapp;
 			productReference = 8B31432A2C3B9A260019CF63 /* ytapiapp.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +162,9 @@
 				Base,
 			);
 			mainGroup = 8B3143212C3B9A260019CF63;
+			packageReferences = (
+				8B5CBF732C7DB25C0062F7E0 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+			);
 			productRefGroup = 8B31432B2C3B9A260019CF63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -184,7 +196,7 @@
 				8B3143432C3B9AFC0019CF63 /* VideoRowView.swift in Sources */,
 				8B3143492C3B9BB00019CF63 /* Playlist.swift in Sources */,
 				8B31433F2C3B9AA50019CF63 /* DataService.swift in Sources */,
-				8B3143302C3B9A260019CF63 /* HomeView.swift in Sources */,
+				8B31434D2C4F87260019CF63 /* HomeView.swift in Sources */,
 				8B3143472C3B9BA30019CF63 /* Video.swift in Sources */,
 				8B31432E2C3B9A260019CF63 /* YoutTubeAPIApp.swift in Sources */,
 			);
@@ -195,6 +207,7 @@
 /* Begin XCBuildConfiguration section */
 		8B3143362C3B9A280019CF63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B31434A2C4F850E0019CF63 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -258,6 +271,7 @@
 		};
 		8B3143372C3B9A280019CF63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B31434A2C4F850E0019CF63 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -322,6 +336,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ytapiapp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ytapiapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -350,6 +365,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ytapiapp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ytapiapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -390,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B5CBF732C7DB25C0062F7E0 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B5CBF742C7DB25C0062F7E0 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B5CBF732C7DB25C0062F7E0 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B3143222C3B9A260019CF63 /* Project object */;
 }
